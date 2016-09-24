@@ -1,11 +1,12 @@
 {
   "name": "tmjs-core",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "TM.js Core is used in all TM.js modules",
-  "main": "tmjs-core.js",
+  "main": "build/tmjs-core.js",
   "scripts": {
     "build": "bin/build",
-    "publish": "bin/publish"
+    "publish": "bin/publish",
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
