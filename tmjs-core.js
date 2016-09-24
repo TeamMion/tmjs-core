@@ -25,10 +25,15 @@ g.tmjs = g.tmjs || {};
 
 g.tmjs.__defineGetter__("core", () => "${version}");
 
-g.tmjs.module = (name, version, getter) =>
-    g.tmjs.__defineGetter__(name, () =>
-    {
-        let module = getter(g.tmjs);
-        module.__defineGetter__("version", () => version);
-        return module;
-    });
+Object.assign(g.tmjs, {
+    module: (name, version, getter) =>
+        g.tmjs.__defineGetter__(name, () =>
+        {
+            let module = getter(g.tmjs);
+            module.__defineGetter__("version", () => version);
+            return module;
+        }),
+    
+    isGenerator: generator =>
+        generator instanceof (function *() {}).constructor
+});
