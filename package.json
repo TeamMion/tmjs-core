@@ -1,0 +1,26 @@
+{
+  "name": "tmjs-core",
+  "version": "1.0.0-alpha.1",
+  "description": "TM.js Core is used in all TM.js modules",
+  "main": "tmjs-core.js",
+  "scripts": {
+    "build": "bin/build",
+    "publish": "bin/publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teammion/tmjs-core.git"
+  },
+  "keywords": [
+    "tmjs-core",
+    "tmjs",
+    "core",
+    "tm.js"
+  ],
+  "author": "Stefan Wimmer <stefanwimmer128@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teammion/tmjs-core/issues"
+  },
+  "homepage": "https://github.com/teammion/tmjs-core#readme"
+}
